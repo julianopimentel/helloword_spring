@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     //retornar hellowor.d em Json
-    @GetMapping("/hello")
+    @GetMapping()
     public ResponseEntity<Response> helloWorld(){
         return ResponseEntity.ok(new Response("Hello World"));
     }
